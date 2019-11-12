@@ -1,7 +1,6 @@
 <?php
-	include '../db/db.php';
-
-	global $connection;
+	include("include/config.php");
+	
 	if ($connection->connect_errno) {
 		printf("Connect failed: %s\n", $connection->connect_error);
 		exit();
