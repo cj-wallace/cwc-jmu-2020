@@ -2,17 +2,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include("include/head.php");?>
+	<?php include("../include/head.php");?>
 </head>
 <body>
 
-<?php include("include/navigation.php");?>
+<?php include("/include/navigation.php");?>
 
 <div class="container" id="main-content">
 	<?php displayQuery() ?>
 </div>
 
-<?php include("include/footer.php");?>
+<?php include("../include/footer.php");?>
 
 </body>
 </html>

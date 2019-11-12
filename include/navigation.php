@@ -7,10 +7,10 @@
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Team") {?>active<?php }?>" href="/team/">Team</a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Events") {?>active<?php }?>" href="/events/index.php">Events</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Events") {?>active<?php }?>" href="/events/">Events</a>
 	  </li>
 		<li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Links") {?>active<?php }?>" href="/links/index.php">Links</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Links") {?>active<?php }?>" href="/links/">Links</a>
 	  </li>
 	</ul>
 </div>
