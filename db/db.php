@@ -7,10 +7,10 @@ $db_username = $db_url["user"];
 $db_password = $db_url["pass"];
 $db = substr($db_url["path"], 1);
 
-$conn = new mysqli($db_server, $db_username, $db_password, $db);
+$connection = new mysqli($db_server, $db_username, $db_password, $db);
 
-if ($conn->connect_errno) {
-        echo "Failed to connect to MySQL: (" . $conn->connect_errno . ") " . $conn->connect_error;
+if ($connection->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $connection->connect_errno . ") " . $connection->connect_error;
     } else {
         printf("Connected Successfully");
     }
