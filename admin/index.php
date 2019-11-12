@@ -9,7 +9,7 @@
 <?php include("../include/navigation.php");?>
 
 <div class="container" id="main-content">
-	
+	<?php displayQuery(); ?>
 </div>
 
 <?php include("../include/footer.php");?>
