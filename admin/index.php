@@ -8,7 +8,7 @@
 	}
 	$query = "SELECT * FROM admin";
 	if ($results = $connection->query($query)) {
-		printf("%d Members.\n", $results->num_rows);
+		printf("%d Admins.\n", $results->num_rows);
 		while($result = $results->fetch_assoc()) {
 			printf("
 				<ul id='%s'>
