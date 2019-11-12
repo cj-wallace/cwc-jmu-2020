@@ -9,9 +9,12 @@ $db = substr($db_url["path"], 1);
 
 $connection = new mysqli($db_server, $db_username, $db_password, $db);
 
+$db_connection_status;
+
+
 if ($connection->connect_errno) {
-        echo "Failed to connect to MySQL: (" . $connection->connect_errno . ") " . $connection->connect_error;
+        $db_connection_status = "Failed to connect to MySQL: (" . $connection->connect_errno . ") " . $connection->connect_error;
     } else {
-        printf("Connected Successfully");
+        $db_connection_status = "Connected Successfully";
     }
 ?>
