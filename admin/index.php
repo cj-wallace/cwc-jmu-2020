@@ -1,4 +1,4 @@
-<?php include(PATH_ROOT . "/include/config.php"); ?>
+<?php include("../include/config.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
