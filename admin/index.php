@@ -1,8 +1,8 @@
-<?php include("../include/config.php"); ?>
+<?php include(PATH_ROOT . "/include/config.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include("../include/head.php");?>
+	<?php include(PATH_ROOT . "/include/head.php");?>
 </head>
 <body>
 
@@ -33,7 +33,7 @@
 	?>
 </div>
 
-<?php include("../include/footer.php");?>
+<?php include(PATH_ROOT . "/include/footer.php");?>
 
 </body>
 </html>
