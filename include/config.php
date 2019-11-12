@@ -1,6 +1,8 @@
 <?php
 	include("db/db.php");
 	
+	define("PATH_ROOT", $_SERVER["DOCUMENT_ROOT"]);
+	
 	switch ($_SERVER["SCRIPT_NAME"]) {
 		case "/team/index.php":
 			$CURRENT_PAGE = "Team"; 
