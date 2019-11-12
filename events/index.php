@@ -1,5 +1,5 @@
 <?php
-	include("include/config.php");
+	include("../include/config.php");
 	
 	if ($connection->connect_errno) {
 		printf("Connect failed: %s\n", $connection->connect_error);
