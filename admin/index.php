@@ -9,16 +9,7 @@
 <?php include("../include/navigation.php");?>
 
 <div class="container" id="main-content">
-	<?php displayQuery(); ?>
-</div>
-
-<?php include("../include/footer.php");?>
-
-</body>
-</html>
-
-<?php	
-	function displayQuery() {
+	<?php
 		if ($connection->connect_errno) {
 			printf("Connect failed: %s\n", $connection->connect_error);
 			exit();
@@ -39,5 +30,10 @@
 			/* free result set */
 			$results->close();
 		}
-	}
-?>
+	?>
+</div>
+
+<?php include("../include/footer.php");?>
+
+</body>
+</html>
