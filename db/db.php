@@ -9,5 +9,9 @@ $db = substr($db_url["path"], 1);
 
 $conn = new mysqli($db_server, $db_username, $db_password, $db);
 
-echo $conn;
+if ($conn->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $conn->connect_errno . ") " . $conn->connect_error;
+    } else {
+        printf("Connected Successfully");
+    }
 ?>
