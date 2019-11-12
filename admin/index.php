@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<?php include($PATH_ROOT . "/include/navigation.php");?>
+<?php include(PATH_ROOT . "/include/navigation.php");?>
 
 <div class="container" id="main-content">
 	<?php
