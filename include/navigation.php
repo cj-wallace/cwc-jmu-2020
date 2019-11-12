@@ -1,5 +1,5 @@
 <div class="container">
-	<ul class="nav">
+	<ul class="nav nav-pills">
 	  <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="/">Home</a>
 	  </li>
