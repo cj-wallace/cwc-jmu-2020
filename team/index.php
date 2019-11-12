@@ -2,15 +2,13 @@
 	include '../db/db.php';
 
 	global $connection;
-	date_default_timezone_set('America/New_York');
-	$today = date(DATE_RSS);
-	$query = "select * from member";
 	if ($connection->connect_errno) {
 		printf("Connect failed: %s\n", $connection->connect_error);
 		exit();
 	}
+	$query = "SELECT * FROM member";
 	if ($results = $connection->query($query)) {
-		printf("Select returned %d rows.\n", $results->num_rows);
+		printf("%d Members.\n", $results->num_rows);
 		while($result = $results->fetch_assoc()) {
 			printf("
 				<ul id='%s'>

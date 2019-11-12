@@ -6,6 +6,9 @@ $db_username = $db_url["user"];
 $db_password = $db_url["pass"];
 $db = substr($db_url["path"], 1);
 
+date_default_timezone_set('America/New_York');
+$db_date = date(DATE_RSS);
+
 $connection = new mysqli($db_server, $db_username, $db_password, $db);
 
 $db_connection_status;
