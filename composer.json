@@ -1,6 +1,8 @@
 {
 	"require": {
-		"ext-mysql": "*",
+		"ext-mysql": "*"
+	},
+	"require": {
 		"ext-gettext": "*"
 	},
 	"require-dev": {
