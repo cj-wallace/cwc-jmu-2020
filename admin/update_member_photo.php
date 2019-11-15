@@ -5,10 +5,12 @@
 		$success = $connection->query($query);
 		
 		if($success){
-			printf("success");
+			printf("success\n");
+			
+			printf("<img src=\"data:image/png;base64,'.base64_encode($row['image']).'\">");
 		}
 		else{
-			printf("success");
+			printf("failure");
 		}
 		$connection->close();
 	}
