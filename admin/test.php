@@ -2,13 +2,11 @@
 <html>
 <head>
 <title>MASHLOG LOGIN FORM</title>
-<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id="body_bg">
-<div <div align="center">
-
+<body>
+<div>
 <h3>MASHLOG LOGIN FORM</h3>
-    <form id="login-form" method="post" action="authen_login.php" >
+    <form id="login-form" method="post" action="form.php" >
         <table border="0.5" >
             <tr>
                 <td><label for="user_id">User Name</label></td>
