@@ -63,7 +63,7 @@
 									printf("<select name='member_id'>");
 									while($result = $results->fetch_assoc()) {
 										printf("
-											<option id='%s'> %s %s</option>",
+											<option value='%s'> %s %s</option>",
 											$result["id"],
 											$result["first_name"],
 											$result["last_name"]);
