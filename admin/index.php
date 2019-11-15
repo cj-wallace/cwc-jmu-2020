@@ -55,6 +55,22 @@
 						/* free result set */
 						$results->close();
 					}
+					
+					?>
+					
+					<p> Image </p>
+					<form action="insert_product.php" method="POST" enctype="multipart/form-data">
+							<label>File: </label><input type="file" name="image" />
+							<input type="submit" />
+					</form>
+					
+					<?php
+					
+					
+					
+					
+					
+					
 					//printf("<script type='text/javascript'>alert('Login Credentials verified');</script>");
 				}else{
 					printf("<script type='text/javascript'>
