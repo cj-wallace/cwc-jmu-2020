@@ -1,5 +1,5 @@
 <?php  
-	include("../include/config.php");
+	require("../include/config.php");
 	
 	if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 		// Assigning POST values to variables.
@@ -13,9 +13,9 @@
 		$count = mysqli_num_rows($result);
 
 		if ($count == 1){
-				printf "<script type='text/javascript'>alert('Login Credentials verified')</script>";
-			}else{
-				printf "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
-			}
+			printf("<script type='text/javascript'>alert('Login Credentials verified')</script>");
+		}else{
+			printf("<script type='text/javascript'>alert('Invalid Login Credentials')</script>");
+		}
 	}
 ?>
