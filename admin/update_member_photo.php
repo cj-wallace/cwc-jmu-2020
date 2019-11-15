@@ -6,7 +6,7 @@
 		$member_id = $_POST['member_id'];
 		
 		$query = "UPDATE `member` SET `profile_img` = '{$member_img}' WHERE `id` = '{$member_id}'";
-		$success = $connection->query($query);
+		$success = mysqli_query($connection,$query);
 		
 		printf("%s %s\n",$_POST['member_id'],$_POST['member_img']);
 		
