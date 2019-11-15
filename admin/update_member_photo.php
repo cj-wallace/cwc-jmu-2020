@@ -3,6 +3,7 @@
 	if (isset($_POST['member_id'])){
 		
 		$member_img = addslashes(file_get_contents($_POST['image']['tmp_name']));
+		$member_id = $_POST['member_id'];
 		
 		$query = "UPDATE `member` SET `profile_img` = '{$member_img}' WHERE `id` = '{$member_id}'";
 		$success = $connection->query($query);
