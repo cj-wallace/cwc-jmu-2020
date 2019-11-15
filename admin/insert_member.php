@@ -35,7 +35,10 @@
 				$count = mysqli_num_rows($result);
 				
 				if ($count == 1){
-					
+					if ($connection->connect_errno) {
+						printf("Connect failed: %s\n", $connection->connect_error);
+						exit();
+					}
 					$query = "SELECT * FROM admin";
 					if ($results = $connection->query($query)) {
 						printf("%d Admins.\n", $results->num_rows);
@@ -56,22 +59,7 @@
 					?>
 					
 					<p> Image </p>
-						<form action="insert_product.php" method="POST" enctype="multipart/form-data">
-							<?php 
-								$query = "SELECT * FROM admin";
-									if ($results = $connection->query($query)) {
-										printf("<select>");
-										while($result = $results->fetch_assoc()) {
-											printf("
-												<option id='%s'> %s %s</option>",
-												$result["id"],
-												$result["first_name"],
-												$result["last_name"]);
-										}
-										/* free result set */
-										$results->close();
-										?>
-						
+					<form action="insert_product.php" method="POST" enctype="multipart/form-data">
 							<label>File: </label><input type="file" name="image" />
 							<input type="submit" />
 					</form>
