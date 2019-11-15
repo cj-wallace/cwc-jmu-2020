@@ -5,7 +5,7 @@
 	<?php include(PATH_ROOT . "/include/head.php");?>
 </head>
 <body>
-	<?php if (!isset($_SESSION['username'])) {?>
+	<?php if (!isset($_SESSION['user_id'])) {?>
 		<div id="admin-login">
 			<h3>Login Form</h3>
 			<form id="login-form" method="post" action="">
