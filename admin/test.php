@@ -5,9 +5,12 @@
       printf("Last name: " . $_POST['lastname'] . "<br />\n");
    }
 ?>
-
+<html>
+<body>
 <form action="form.php" method="post">
    <p>First name: <input type="text" name="firstname" /></p>
    <p>Last name: <input type="text" name="firstname" /></p>
    <input type="submit" name="submit" value="Submit" />
 </form>
+</body>
+</html>
