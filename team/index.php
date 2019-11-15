@@ -35,7 +35,7 @@
 						$result["age"],
 						$result["grad_year"],
 						$result["bio"]);
-						printf("<img src=\"data:image/png;base64,'.base64_encode($result[\"profile_img\"]).'\">");
+						printf("<img src=\"data:image/png;base64,'.base64_encode({$result[\"profile_img\"]}).'\">");
 				}
 				/* free result set */
 				$results->close();
