@@ -58,7 +58,7 @@
 					<p> Image </p>
 						<form action="insert_product.php" method="POST" enctype="multipart/form-data">
 							<?php 
-								$query = "SELECT * FROM admin";
+								$query = "SELECT * FROM member";
 								if ($results = $connection->query($query)) {
 									printf("<select>");
 									while($result = $results->fetch_assoc()) {
