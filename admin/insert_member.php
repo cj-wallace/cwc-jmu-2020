@@ -1,7 +1,7 @@
 <?php 
 	require("../include/config.php"); 
 	if (isset($_POST['member_id'])){
-		$query = "INSERT INTO `product_images` (`id`, `image`) VALUES ('1', '{$image}')";
+		$query = "UPDATE `member` SET `image` = '{$image}' WHERE `id` = {$member_id}";
 		$success = $connection->query($query);
 		
 		if($success){
@@ -10,5 +10,6 @@
 		else{
 			printf("success");
 		}
+		$connection->close();
 	}
 ?>
