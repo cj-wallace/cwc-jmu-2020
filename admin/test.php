@@ -1,7 +1,8 @@
 <?php  
 	include("../include/config.php");
 
-	if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
+	if (isset($_POST['Submit'])){
+		// if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 		// Assigning POST values to variables.
 		$username = $_POST['user_id'];
 		$password = $_POST['user_pass'];
@@ -23,12 +24,12 @@
 <!DOCTYPE html >
 <html>
 	<head>
-	<title>Admin Login</title>
+		<title>Admin Login</title>
 	</head>
 <body>
 	<div>
 		<h3>Login Form</h3>
-		<form id="login-form" method="post" action="test.php" >
+		<form id="login-form" method="post" action="" >
 			<label for="user_id">User Name</label>
 			<input type="text" name="user_id" id="user_id">
 			<label for="user_pass">Password</label>
