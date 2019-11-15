@@ -26,7 +26,6 @@
 							<li class='age'><b>Age:</b> %s</li>
 							<li class='grad_year'><b>Graduation Year:</b> %s</li>
 							<li class='bio'><b>Bio:</b> %s</li>
-							<li class='profile_img'><b>Image:</b> %s</li>
 						</ul>",
 						$result["id"],
 						$result["first_name"],
@@ -35,8 +34,8 @@
 						$result["major"],
 						$result["age"],
 						$result["grad_year"],
-						$result["bio"],
-						$result["profile_img"]);
+						$result["bio"]);
+						printf("<img src=\"data:image/png;base64,'.base64_encode($result[\"profile_img\"]).'\">");
 				}
 				/* free result set */
 				$results->close();
