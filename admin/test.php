@@ -1,6 +1,27 @@
 <?php  
 	include("../include/config.php");
+?>
 
+
+<!DOCTYPE html >
+<html>
+<head>
+	<title>Admin Login</title>
+</head>
+<body>
+	<div>
+		<h3>Login Form</h3>
+		<form id="login-form" method="post" action="" >
+			<label for="user_id">User Name</label>
+			<input type="text" name="user_id" id="user_id">
+			<label for="user_pass">Password</label>
+			<input type="password" name="user_pass" id="user_pass"></input>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Reset"/>
+		</form>
+	</div>
+	
+	<?php
 	if (isset($_POST['Submit'])){
 		// if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 		// Assigning POST values to variables.
@@ -20,23 +41,5 @@
 			}
 	}
 ?>
-
-<!DOCTYPE html >
-<html>
-	<head>
-		<title>Admin Login</title>
-	</head>
-<body>
-	<div>
-		<h3>Login Form</h3>
-		<form id="login-form" method="post" action="<?=$_SERVER['PHP_SELF'];?>" >
-			<label for="user_id">User Name</label>
-			<input type="text" name="user_id" id="user_id">
-			<label for="user_pass">Password</label>
-			<input type="password" name="user_pass" id="user_pass"></input>
-			<input type="submit" value="Submit" />
-			<input type="reset" value="Reset"/>
-		</form>
-	</div>
 </body>
 </html>
