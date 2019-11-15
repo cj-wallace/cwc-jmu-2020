@@ -1,7 +1,8 @@
 <?php  
 	include("../include/config.php");
-
-	if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
+	
+	if (isset($_POST['Submit'])){
+		// if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 		// Assigning POST values to variables.
 		$username = $_POST['user_id'];
 		$password = $_POST['user_pass'];
