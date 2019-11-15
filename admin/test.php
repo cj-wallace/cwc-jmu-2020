@@ -29,7 +29,7 @@
 <body>
 	<div>
 		<h3>Login Form</h3>
-		<form id="login-form" method="post" action="" >
+		<form id="login-form" method="post" action="<?=$_SERVER['PHP_SELF'];?>" >
 			<label for="user_id">User Name</label>
 			<input type="text" name="user_id" id="user_id">
 			<label for="user_pass">Password</label>
