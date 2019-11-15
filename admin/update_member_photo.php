@@ -2,7 +2,7 @@
 	require("../include/config.php"); 
 	if (isset($_POST['member_id'])){
 		
-		$member_img = addslashes(file_get_contents($_FILES['image']['tmp_name']));
+		$member_img = (file_get_contents($_FILES['image']['tmp_name']);
 		$member_id = $_POST['member_id'];
 		
 		$query = "UPDATE `member` SET `profile_img` = '{$member_img}' WHERE `id` = '{$member_id}'";

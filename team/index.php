@@ -35,7 +35,6 @@
 						$result["age"],
 						$result["grad_year"],
 						$result["bio"]);
-						header("Content-type: image/png");
 						printf("<img src=\"data:image/png;base64,'.base64_encode(%s).'\">", $result["profile_img"]);
 				}
 				/* free result set */
