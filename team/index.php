@@ -36,7 +36,7 @@
 						$result["grad_year"],
 						$result["bio"]);
 						
-						echo '<img src="data:image/png;base64,'.base64_encode( $result['image'] ).'"/>';
+						echo '<img src="data:image/png;base64,'.base64_encode( $result['profile_img'] ).'"/>';
 						
 						//printf("<img src=\"data:image/png;base64,'.base64_encode(%s).'\">", $result["profile_img"]);
 				}
