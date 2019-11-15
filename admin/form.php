@@ -1,24 +1,21 @@
 <?php  
-include("../include/config.php");
+	include("../include/config.php");
 
-if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
-	
-// Assigning POST values to variables.
-$username = $_POST['user_id'];
-$password = $_POST['user_pass'];
+	if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
+		// Assigning POST values to variables.
+		$username = $_POST['user_id'];
+		$password = $_POST['user_pass'];
 
-// CHECK FOR THE RECORD FROM TABLE
-$query = "SELECT * FROM `admin` WHERE username='$username' and Password='$password'";
- 
-$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-$count = mysqli_num_rows($result);
+		// CHECK FOR THE RECORD FROM TABLE
+		$query = "SELECT * FROM `admin` WHERE username='$username' AND password='$password'";
+		 
+		$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+		$count = mysqli_num_rows($result);
 
-if ($count == 1){
-		//echo "Login Credentials verified";
-		echo "<script type='text/javascript'>alert('Login Credentials verified')</script>";
-	}else{
-		echo "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
-		//echo "Invalid Login Credentials";
+		if ($count == 1){
+				printf "<script type='text/javascript'>alert('Login Credentials verified')</script>";
+			}else{
+				printf "<script type='text/javascript'>alert('Invalid Login Credentials')</script>";
+			}
 	}
-}
 ?>
