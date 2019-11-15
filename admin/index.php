@@ -1,13 +1,24 @@
-<?php include("../include/config.php"); ?>
+<?php require("../include/config.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php include(PATH_ROOT . "/include/head.php");?>
 </head>
 <body>
-
-	<?php include(PATH_ROOT . "/include/navigation.php");?>
-
+	<div>
+		<h3>Login Form</h3>
+		<form id="login-form" method="post" action="">
+			<label for="user_id">User Name</label>
+			<input type="text" name="user_id" id="user_id">
+			<br>
+			<label for="user_pass">Password</label>
+			<input type="password" name="user_pass" id="user_pass"></input>
+			<br>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Reset"/>
+		</form>
+	</div>
+	
 	<div class="container" id="main-content">
 		<?php
 			if ($connection->connect_errno) {
@@ -32,19 +43,31 @@
 			}
 		?>
 	</div>
+	
+	<div id="admin-page">
+		<?php			
+			if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
+				// Assigning POST values to variables.
+				$username = $_POST['user_id'];
+				$password = $_POST['user_pass'];
 
-	<div>
-		<h2>Registration Form</h2>
+				// CHECK FOR THE RECORD FROM TABLE
+				$query = "SELECT * FROM `admin` WHERE username='$username' AND password='$password'";
+				 
+				$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
+				$count = mysqli_num_rows($result);
 
-    <form action="registration_form.php" method="POST"> 
-			First name: <input type="text" name="firstname">
-			<br> 
-			Last name: <input type="text" name="lastname"> 
-			<input type="hidden" name="form_submitted" value="1" /><input type="submit" value="Submit">
-    </form>
+				if ($count == 1){
+					printf("<script type='text/javascript'>
+						alert('Login Credentials verified');
+					</script>");
+				}else{
+					printf("<script type='text/javascript'>
+						alert('Invalid Login Credentials')
+					</script>");
+				}
+			}
+		?>
 	</div>
-
-	<?php include(PATH_ROOT . "/include/footer.php");?>
-
 </body>
 </html>
