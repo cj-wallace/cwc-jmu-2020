@@ -21,31 +21,6 @@
 		</div>
 	<?php } ?>
 	
-	<div class="container" id="main-content">
-		<?php
-			if ($connection->connect_errno) {
-				printf("Connect failed: %s\n", $connection->connect_error);
-				exit();
-			}
-			$query = "SELECT * FROM admin";
-			if ($results = $connection->query($query)) {
-				printf("%d Admins.\n", $results->num_rows);
-				while($result = $results->fetch_assoc()) {
-					printf("
-						<ul id='%s'>
-							<li class='username'><b>Username:</b> %s</li>
-							<li class='password'><b>Password:</b> %s</li>
-						</ul>",
-						$result["id"],
-						$result["username"],
-						$result["password"]);
-				}
-				/* free result set */
-				$results->close();
-			}
-		?>
-	</div>
-	
 	<div id="admin-page">
 		<?php			
 			if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
@@ -60,6 +35,26 @@
 				$count = mysqli_num_rows($result);
 				
 				if ($count == 1){
+					if ($connection->connect_errno) {
+						printf("Connect failed: %s\n", $connection->connect_error);
+						exit();
+					}
+					$query = "SELECT * FROM admin";
+					if ($results = $connection->query($query)) {
+						printf("%d Admins.\n", $results->num_rows);
+						while($result = $results->fetch_assoc()) {
+							printf("
+								<ul id='%s'>
+									<li class='username'><b>Username:</b> %s</li>
+									<li class='password'><b>Password:</b> %s</li>
+								</ul>",
+								$result["id"],
+								$result["username"],
+								$result["password"]);
+						}
+						/* free result set */
+						$results->close();
+					}
 					printf("<script type='text/javascript'>
 						alert('Login Credentials verified');
 					</script>");
