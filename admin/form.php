@@ -1,12 +1,8 @@
 <?php
-   if(isset($_POST['submit']) {
-      if($_GET['lang'] == "english") {
-         echo("First name: " . $_POST['firstname'] . "<br />\n");
-         echo("Last name: " . $_POST['lastname'] . "<br />\n");
-      } else if($_GET['lang'] == "spanish") {
-         echo("Nombre: " . $_POST['firstname'] . "<br />\n");
-         echo("Apellido: " . $_POST['lastname'] . "<br />\n");
-   }
+	if(isset($_POST['submit']) {
+		echo("First name: " . $_POST['firstname'] . "<br />\n");
+		echo("Last name: " . $_POST['lastname'] . "<br />\n");
+	}
 ?>
 
 <form method="post">
