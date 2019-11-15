@@ -55,9 +55,7 @@
 						/* free result set */
 						$results->close();
 					}
-					printf("<script type='text/javascript'>
-						alert('Login Credentials verified');
-					</script>");
+					//printf("<script type='text/javascript'>alert('Login Credentials verified');</script>");
 				}else{
 					printf("<script type='text/javascript'>
 						alert('Invalid Login Credentials')
