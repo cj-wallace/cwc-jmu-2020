@@ -68,6 +68,7 @@
 											$result["first_name"],
 											$result["last_name"]);
 									}
+									printf("</select>");
 									/* free result set */
 									$results->close();
 								}
