@@ -5,19 +5,21 @@
 	<?php include(PATH_ROOT . "/include/head.php");?>
 </head>
 <body>
-	<div>
-		<h3>Login Form</h3>
-		<form id="login-form" method="post" action="">
-			<label for="user_id">User Name</label>
-			<input type="text" name="user_id" id="user_id">
-			<br>
-			<label for="user_pass">Password</label>
-			<input type="password" name="user_pass" id="user_pass"></input>
-			<br>
-			<input type="submit" value="Submit" />
-			<input type="reset" value="Reset"/>
-		</form>
-	</div>
+	<?php if (!isset($_SESSION['username'])) {?>
+		<div id="admin-login">
+			<h3>Login Form</h3>
+			<form id="login-form" method="post" action="">
+				<label for="user_id">User Name</label>
+				<input type="text" name="user_id" id="user_id">
+				<br>
+				<label for="user_pass">Password</label>
+				<input type="password" name="user_pass" id="user_pass"></input>
+				<br>
+				<input type="submit" value="Submit" />
+				<input type="reset" value="Reset"/>
+			</form>
+		</div>
+	<?php } ?>
 	
 	<div class="container" id="main-content">
 		<?php
@@ -56,7 +58,7 @@
 				 
 				$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 				$count = mysqli_num_rows($result);
-
+				
 				if ($count == 1){
 					printf("<script type='text/javascript'>
 						alert('Login Credentials verified');
