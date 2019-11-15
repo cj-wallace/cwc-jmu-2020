@@ -7,7 +7,7 @@
 		if($success){
 			printf("success\n");
 			
-			printf("<img src=\"data:image/png;base64,'.base64_encode($row['image']).'\">");
+			//printf("<img src=\"data:image/png;base64,'.base64_encode($row['image']).'\">");
 		}
 		else{
 			printf("failure");
