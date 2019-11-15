@@ -59,18 +59,19 @@
 						<form action="insert_product.php" method="POST" enctype="multipart/form-data">
 							<?php 
 								$query = "SELECT * FROM admin";
-									if ($results = $connection->query($query)) {
-										printf("<select>");
-										while($result = $results->fetch_assoc()) {
-											printf("
-												<option id='%s'> %s %s</option>",
-												$result["id"],
-												$result["first_name"],
-												$result["last_name"]);
-										}
-										/* free result set */
-										$results->close();
-										?>
+								if ($results = $connection->query($query)) {
+									printf("<select>");
+									while($result = $results->fetch_assoc()) {
+										printf("
+											<option id='%s'> %s %s</option>",
+											$result["id"],
+											$result["first_name"],
+											$result["last_name"]);
+									}
+									/* free result set */
+									$results->close();
+								}
+							?>
 						
 							<label>File: </label><input type="file" name="image" />
 							<input type="submit" />
