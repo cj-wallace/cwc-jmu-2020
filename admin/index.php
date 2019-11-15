@@ -60,7 +60,7 @@
 							<?php 
 								$query = "SELECT * FROM member";
 								if ($results = $connection->query($query)) {
-									printf("<select>");
+									printf("<select name='member_id'>");
 									while($result = $results->fetch_assoc()) {
 										printf("
 											<option id='%s'> %s %s</option>",
@@ -73,8 +73,11 @@
 									$results->close();
 								}
 							?>
+							<br>
 						
-							<label>File: </label><input type="file" name="image" />
+							<label>File: </label>
+							<input type="file" name="image" />
+							<br>
 							<input type="submit" />
 					</form>
 					
