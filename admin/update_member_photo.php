@@ -12,7 +12,7 @@
 			//printf("<img src=\"data:image/png;base64,'.base64_encode($row['image']).'\">");
 		}
 		else{
-			printf("failure\n");
+			printf("failure\n %s\n", $connection->connect_errno);
 		}
 		$connection->close();
 	}
