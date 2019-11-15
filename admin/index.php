@@ -56,7 +56,7 @@
 					?>
 					
 					<p> Image </p>
-						<form action="insert_product.php" method="POST" enctype="multipart/form-data">
+						<form action="update_member_photo.php" method="POST" enctype="multipart/form-data">
 							<?php 
 								$query = "SELECT * FROM member";
 								if ($results = $connection->query($query)) {
