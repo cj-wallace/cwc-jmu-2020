@@ -1,21 +1,18 @@
 <?php
 $db_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-print_r($db_url);
 if($db_url["path"] == null){
-    echo "null";
+    $db_server = "us-cdbr-iron-east-05.cleardb.net";
+    $db_username = "b8ef108cc8e9cf";
+    $db_password = "723ffcfb";
+    $db = substr("/heroku_c77a724887dd59a", 1);
+}
+else{
     $db_server = $db_url["host"];
     $db_username = $db_url["user"];
     $db_password = $db_url["pass"];
     $db = substr($db_url["path"], 1);
 }
-
-$db_server = $db_url["host"];
-$db_username = $db_url["user"];
-$db_password = $db_url["pass"];
-$db = substr($db_url["path"], 1);
-
-echo $db_server . $db_username . $db_password . $db;
 
 date_default_timezone_set('America/New_York');
 $db_date = date(DATE_RSS);
