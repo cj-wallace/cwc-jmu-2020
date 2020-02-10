@@ -7,11 +7,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="/">Admin Page</a>
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link active" href="/">Home</a></li>
-            </ul>
-        </div>
+        <div class="container"><a class="navbar-brand" href="/">Admin Page</a></div>
     </nav>
     <div class="container" id="admin-login">
         <div class="row">
@@ -20,7 +16,7 @@
                 <form method="post">
                     <h2 class="sr-only">Login Form</h2>
                     <div class="illustration"></div>
-                    <div class="form-group"><input class="form-control" type="email" name="user" placeholder="Username"></div>
+                    <div class="form-group"><input class="form-control" type="text" name="user" placeholder="Username"></div>
                     <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
                     <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
                 </form>

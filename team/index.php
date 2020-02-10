@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row projects">
                 <div class="col-sm-6 col-lg-4 item"><img class="img-fluid member-image" src="../include/assets/img/desk.jpg">
-                    <h3 class="name member-name">Project Name</h3>
+                    <h3 class="name member-name">Member Name</h3>
                     <p class="description member-major">Major</p>
                     <p class="description member-age">Age</p>
                     <p class="description member-year">Graduation Year</p>

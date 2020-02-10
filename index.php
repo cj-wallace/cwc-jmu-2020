@@ -31,10 +31,11 @@
             <div class="col-md-10 col-lg-8">
                 <div class="post-preview">
                     <a href="#">
-                        <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2><img class="post-image">
-                        <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        <h2 class="post-title">Post Title</h2>
+                        <img class="post-image">
+                        <h3 class="post-subtitle">Subtitle Here</h3>
                     </a>
-                    <p class="post-meta">Posted by Member on January 30th, 2020</p>
+                    <p class="post-meta">Posted on January 30th, 2020</p>
                 </div>
                 <hr>
                 <div class="clearfix">
