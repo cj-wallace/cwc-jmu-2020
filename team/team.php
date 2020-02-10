@@ -7,7 +7,7 @@
 
 <body>
 
-<?php include PATH_ROOT . "/include/navigation.php" ?>
+<?php include(PATH_ROOT . "/include/navigation.php.php");?>
 
 <header class="masthead" style="background-image:url('../include/assets/img/about-bg.jpg');">
         <div class="overlay"></div>
