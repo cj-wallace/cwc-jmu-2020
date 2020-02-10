@@ -40,9 +40,7 @@
     </div>
     <hr>
     <?php include PATH_ROOT . "/include/footer.php" ?>
-    <script src="../include/assets/js/jquery.min.js"></script>
-    <script src="../include/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../include/assets/js/clean-blog.js"></script>
+    <?php include PATH_ROOT . "include/script.php" ?>
 </body>
 
 </html>

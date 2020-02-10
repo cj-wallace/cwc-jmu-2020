@@ -41,6 +41,7 @@
 	</div>
 
 	<?php include(PATH_ROOT . "/include/footer.php");?>
+    <?php include(PATH_ROOT . "/include/script.php");?>
 
 </body>
 </html>

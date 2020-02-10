@@ -73,9 +73,7 @@
         </div>
     </div>
     <hr>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/clean-blog.js"></script>
+    <?php include PATH_ROOT . "include/script.php" ?>
 </body>
 
 </html>
