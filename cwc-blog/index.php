@@ -10,7 +10,7 @@
 
     <?php include PATH_ROOT . "/include/navigation.php" ?>
 
-    <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
+    <header class="masthead" style="background-image:url('include/assets/img/home-bg.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -56,9 +56,9 @@
     </div>
     <?php include PATH_ROOT . "include/footer.php" ?>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/clean-blog.js"></script>
+    <script src="include/assets/js/jquery.min.js"></script>
+    <script src="include/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="include/assets/js/clean-blog.js"></script>
 </body>
 
 </html>

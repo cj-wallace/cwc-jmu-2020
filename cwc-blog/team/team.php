@@ -9,7 +9,7 @@
 
 <?php include PATH_ROOT . "/include/navigation.php" ?>
 
-<header class="masthead" style="background-image:url('../assets/img/about-bg.jpg');">
+<header class="masthead" style="background-image:url('../include/assets/img/about-bg.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -23,7 +23,7 @@
     <div class="projects-clean">
         <div class="container">
             <div class="row projects">
-                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid member-image" src="../assets/img/desk.jpg">
+                <div class="col-sm-6 col-lg-4 item"><img class="img-fluid member-image" src="../include/assets/img/desk.jpg">
                     <h3 class="name member-name">Project Name</h3>
                     <p class="description member-major">Major</p>
                     <p class="description member-age">Age</p>
@@ -35,9 +35,9 @@
     </div>
     <hr>
     <?php include PATH_ROOT . "include/footer.php" ?>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/clean-blog.js"></script>
+    <script src="../include/assets/js/jquery.min.js"></script>
+    <script src="../include/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../include/assets/js/clean-blog.js"></script>
 </body>
 
 </html>

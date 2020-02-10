@@ -26,7 +26,7 @@
             <div class="row projects">
                 <div class="col-sm-6 item">
                     <div class="row">
-                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="../assets/img/desk.jpg"></a></div>
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="../include/assets/img/desk.jpg"></a></div>
                         <div class="col">
                             <a class="link" href="#">
                                 <h3 class="name">Link Title</h3>
@@ -40,9 +40,9 @@
     </div>
     <hr>
     <?php include PATH_ROOT . "/include/footer.php" ?>
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/clean-blog.js"></script>
+    <script src="../include/assets/js/jquery.min.js"></script>
+    <script src="../include/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../include/assets/js/clean-blog.js"></script>
 </body>
 
 </html>
