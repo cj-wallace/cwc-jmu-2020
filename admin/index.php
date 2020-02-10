@@ -73,7 +73,7 @@
         </div>
     </div>
     <hr>
-    <?php include PATH_ROOT . "include/script.php" ?>
+    <?php include(PATH_ROOT . "/include/script.php"); ?>
 </body>
 
 </html>

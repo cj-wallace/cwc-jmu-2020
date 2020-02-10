@@ -3,12 +3,12 @@
 <html>
 
 <head>
-    <?php include PATH_ROOT . "/include/head.php" ?>
+    <?php include(PATH_ROOT . "/include/head.php");?>
 </head>
 
 <body>
 
-<?php include PATH_ROOT . "/include/navigation.php" ?>
+<?php include(PATH_ROOT . "/include/navigation.php");?>
 
 <header class="masthead" style="background-image: url(&quot;assets/img/desk.jpg&quot;);">
         <div class="overlay"></div>
@@ -39,8 +39,8 @@
         </div>
     </div>
     <hr>
-    <?php include PATH_ROOT . "/include/footer.php" ?>
-    <?php include PATH_ROOT . "include/script.php" ?>
+    <?php include(PATH_ROOT . "/include/footer.php"); ?>
+    <?php include(PATH_ROOT . "/include/script.php"); ?>
 </body>
 
 </html>

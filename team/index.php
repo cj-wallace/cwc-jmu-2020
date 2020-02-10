@@ -7,7 +7,7 @@
 
 <body>
 
-<?php include(PATH_ROOT . "/include/navigation.php.php");?>
+<?php include(PATH_ROOT . "/include/navigation.php");?>
 
 <header class="masthead" style="background-image:url('../include/assets/img/about-bg.jpg');">
         <div class="overlay"></div>
@@ -34,8 +34,8 @@
         </div>
     </div>
     <hr>
-    <?php include PATH_ROOT . "/include/footer.php" ?>
-    <?php include PATH_ROOT . "/include/script.php" ?>
+    <?php include(PATH_ROOT . "/include/footer.php"); ?>
+    <?php include(PATH_ROOT . "/include/script.php"); ?>
 </body>
 
 </html>

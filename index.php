@@ -51,9 +51,9 @@
                 <h1>Social Media</h1>
                 <hr>
                 <iframe src="https://www.instagram.com/p/B8K0_kWHdPd/embed" allowtransparency="true" frameborder="0" scrolling="no" width="320" height="550"></iframe>
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&amp;width=350"
-                    scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media" width="350" height="320"></iframe>
-                <div class="fb-page" data-href="https://www.facebook.com/jmucwc/" data-tabs="timeline" data-width="350" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jmucwc/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jmucwc/">JMU: Collegiate Wind Competition</a></blockquote></div>
+                <hr>
+                <div class="fb-page" data-href="https://www.facebook.com/jmucwc/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jmucwc/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jmucwc/">JMU: Collegiate Wind Competition</a></blockquote></div>
+                <hr>
                 <a class="twitter-timeline" href="https://twitter.com/JMUCWC?ref_src=twsrc%5Etfw">Tweets by JMUCWC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
