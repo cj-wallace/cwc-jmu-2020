@@ -4,6 +4,7 @@
 <head>
 	<?php include(PATH_ROOT . "/include/head.php");?>
 </head>
+
 <body>
 
 	<?php include(PATH_ROOT . "/include/navigation.php");?>
