@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact us - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Projects-Clean.css">
+    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="/">Admin Page</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="admin-login">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <p>Please login to access admin controls</p>
+                <form method="post">
+                    <h2 class="sr-only">Login Form</h2>
+                    <div class="illustration"></div>
+                    <div class="form-group"><input class="form-control" type="email" name="user" placeholder="Username"></div>
+                    <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+                </form>
+                <form id="loginForm" name="sentMessage" novalidate="novalidate">
+                    <div class="control-group"></div>
+                    <div id="success"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="admin-control">
+        <div class="row">
+            <div class="col">
+                <p>New Post</p>
+                <form>
+                    <div class="form-group" id="post-form"><input class="form-control" type="text" id="post-title" placeholder="Post Title"><input type="file" id="post-image"><input class="form-control" id="form-date" type="date"><input class="form-control" type="text" id="post-desc" placeholder="Description">
+                        <button
+                            class="btn btn-primary" id="post-submit" placeholder="Post Title">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <p>New Event</p>
+                <form>
+                    <div class="form-group" id="event-group" placeholder="Description"><input class="form-control" type="text" id="event-title" placeholder="Event Title"><input class="form-control" id="event-date" placeholder="Description" type="date"><input class="form-control" id="event-desc" type="text" placeholder="Description">
+                        <button
+                            class="btn btn-primary" id="event-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>New Link</p>
+                <form>
+                    <div class="form-group" id="link-form" placeholder="Post Title"><input class="form-control" type="text" id="post-title" placeholder="Post Title"><input type="file" id="link-image"><input class="form-control" id="link-date" type="date"><input class="form-control" type="text-input" id="link-desc"
+                            placeholder="Description"><button class="btn btn-primary" id="link-submit" type="button">Submit</button></div>
+                </form>
+            </div>
+            <div class="col">
+                <p>Edit Member</p>
+                <form>
+                    <div class="form-group" id="post-form"><select class="form-control" id="member-select"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select>
+                        <input
+                            class="form-control" type="text" id="member-name" placeholder="Full Name"><input class="form-control" type="text" id="member-major" placeholder="Major"><input class="form-control" type="number" id="member-age" placeholder="Age"><input class="form-control" type="number" id="member-grad" placeholder="Graduation Year">
+                            <input
+                                type="file" id="member-image"><input class="form-control" type="text" id="member-bio" placeholder="Bio"><button class="btn btn-primary" id="member-submit" placeholder="Bio">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/clean-blog.js"></script>
+</body>
+
+</html>
