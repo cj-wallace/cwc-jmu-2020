@@ -54,8 +54,8 @@
                     allowtransparency="true" frameborder="0" scrolling="no" title="Follow BootstrapStudio on Twitter" width="250" height="30"></iframe></div>
         </div>
     </div>
-    <?php include PATH_ROOT . "include/footer.php" ?>
-    <?php include PATH_ROOT . "include/script.php" ?>
+    <?php include PATH_ROOT . "/include/footer.php" ?>
+    <?php include PATH_ROOT . "/include/script.php" ?>
 </body>
 
 </html>
