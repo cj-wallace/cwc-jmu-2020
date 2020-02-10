@@ -1,14 +1,14 @@
-<?php require "/include/config.php" ?>
+<?php require("/include/config.php"); ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <?php include PATH_ROOT . "/include/head.php" ?>
+    <?php include("/include/head.php"); ?>
 </head>
 
 <body>
 
-    <?php include PATH_ROOT . "/include/navigation.php" ?>
+    <?php include(PATH_ROOT . "/include/navigation.php"); ?>
 
     <header class="masthead" style="background-image:url('include/assets/img/home-bg.jpg');">
         <div class="overlay"></div>
@@ -54,8 +54,8 @@
                     allowtransparency="true" frameborder="0" scrolling="no" title="Follow BootstrapStudio on Twitter" width="250" height="30"></iframe></div>
         </div>
     </div>
-    <?php include PATH_ROOT . "/include/footer.php" ?>
-    <?php include PATH_ROOT . "/include/script.php" ?>
+    <?php include(PATH_ROOT . "/include/footer.php"); ?>
+    <?php include(PATH_ROOT . "/include/script.php"); ?>
 </body>
 
 </html>
