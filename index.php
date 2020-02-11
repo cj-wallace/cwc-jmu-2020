@@ -53,7 +53,7 @@
                 <hr>
                 <iframe src="https://www.instagram.com/p/B8K0_kWHdPd/embed" allowtransparency="true" frameborder="0" scrolling="no" width="320" height="550"></iframe>
                 <hr>
-                <div class="fb-page" data-href="https://www.facebook.com/jmucwc/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jmucwc/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jmucwc/">JMU: Collegiate Wind Competition</a></blockquote></div>
+                <div class="fb-page" data-href="https://www.facebook.com/jmucwc" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jmucwc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jmucwc">JMU: Collegiate Wind Competition</a></blockquote></div>
                 <hr>
                 <a class="twitter-timeline" href="https://twitter.com/JMUCWC?ref_src=twsrc%5Etfw">Tweets by JMUCWC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
