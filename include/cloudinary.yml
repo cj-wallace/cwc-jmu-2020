@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hcsp5bmvn
+  api_key: '536937592813677'
+  api_secret: 7XXEKtvdBLtGo5_zIbXv2XCBjoo
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: hcsp5bmvn
+  api_key: '536937592813677'
+  api_secret: 7XXEKtvdBLtGo5_zIbXv2XCBjoo
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: hcsp5bmvn
+  api_key: '536937592813677'
+  api_secret: 7XXEKtvdBLtGo5_zIbXv2XCBjoo
+  enhance_image_tag: true
+  static_file_support: false

@@ -1,7 +1,8 @@
 {
 	"require": {
 		"ext-mysqli": "*",
-		"ext-gettext": "*"
+		"ext-gettext": "*",
+    "cloudinary/cloudinary_php": "dev-master"
 	},
 	"require-dev": {
 		"heroku/heroku-buildpack-php": "*"

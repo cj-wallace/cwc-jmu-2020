@@ -1,6 +1,13 @@
 <?php
 $db_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
+\Cloudinary::config(array( 
+  "cloud_name" => "my_cloud_name", 
+  "api_key" => "my_key", 
+  "api_secret" => "my_secret", 
+  "secure" => true
+));
+
 if($db_url["path"] == null){
     $db_server = "us-cdbr-iron-east-05.cleardb.net";
     $db_username = "b8ef108cc8e9cf";
